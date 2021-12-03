@@ -13,8 +13,10 @@
 tg: @danila.psarev
 
 -------
-
-!TODO: загрузить ссылки на модели и файлы необходимы для запуска блокнота
+Ссылки на необходимые модели и датасеты для запуска:
+1) Обученная нами Yolo(v4) ([веса](https://drive.google.com/file/d/142cfyQvu-TBshoNDFHg8wA4Tu09tQS7x/view?usp=sharing), [конфиг](https://drive.google.com/file/d/1XrCOuRW_1hXxTDCACo4sB4yn610n40-O/view?usp=sharing) и [классы](https://drive.google.com/file/d/16yQydO6YRk_6Pte2jYgsjwi1ziLmIfWD/view?usp=sharing))
+2) Обученная AlexeyAB Yolo(v4) на MS COCO (все вместе [тут](https://drive.google.com/drive/folders/1myqcAWoi_2dBmUax6LYcs_A9yMrPRFG1?usp=sharing))
+3) Картинки для тестов [тут](https://drive.google.com/drive/folders/1ZRBzBZ3Qd_Cl4rcRlgjXzpOtiVvNIUsm)
 
 ![mamp](pics/mamp.jpg)
 
