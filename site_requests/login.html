@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="garbage.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="jquery/dist/jquery.min.js"></script>
+    <title>НаВывоз</title>
+</head>
+<script type="module" src="js/work.js" defer></script> 
+
+<body>
+<form action="/login.html">
+
+  <div class="intro__inner">
+    <br/>
+    <label for="uname"><b>Логин</b></label>
+    <br/>
+    <input type="text" placeholder="Введите логин" name="uname" required>
+    <br/>
+    <label for="psw"><b>Пароль</b></label>
+    <br/>
+    <input type="password" placeholder="Введите пароль" name="psw" required>
+    <br/>
+    <br/>
+    
+
+  </div>
+
+  <br/>
+  <div class="intro__inner">
+    <button type="button" class="mybtn" onclick="profile()">Авторизоваться</button>
+    <br/>
+    <span class="psw">Забыли <a href="#">пароль?</a></span>
+  </div>
+      
+  <script>
+    function profile() {
+      
+      window.location = 'main.html';
+    }
+    
+    </script>
+</form>
+</body>

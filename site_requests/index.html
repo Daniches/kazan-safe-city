@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="garbage.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="jquery/dist/jquery.min.js"></script>
+    <title>НаВывоз</title>
+</head>
+<script type="module" src="js/work.js" defer></script> 
+
+<body>
+    
+ <header class="header">
+       <div class = "container">
+         <div class = "header__inner">
+             НаВывоз
+            <nav class ="nav">
+              <button onclick="first()" class="mybtn">Новые заявки</button>
+              <button onclick="second()" class="mybtn">Актуальные заявки</button>
+
+              <button onclick="third()"  class="mybtn">Завершенные заявки</button>
+
+              <label class="header__inner">Администратор</label>
+              </nav>       
+        </div>
+    </div>
+</header>
+  
+<script>
+  function reload() {
+    location.reload();
+  }
+
+  </script>
+
+<script>
+  function profile() {
+    
+    localStorage.setItem("profile", "0")
+    window.location = 'user.html';
+  }
+
+  </script>
+
+  <script>
+    function second() {
+      localStorage.setItem("actual", "2")
+    }
+    </script>
+    
+</script>
+    <script>
+      function third() {
+        localStorage.setItem("actual", "3")
+      }
+      </script>
+
+</script>
+<script>
+  function first() {
+    localStorage.setItem("actual", "1")
+  }
+  </script>
+
+
+<div class="intro">
+    <div class = "container">
+        <div class="intro__inner">
+          <div class="table-responsive">
+            <table class="goods table mt-3" id="table1">
+              <thead>
+                <tr class="table-primary align-middle">
+                  <th data-type="number" style="background-color:black; color: white;">№</th>
+                  <th data-type="number" style="background-color:black; color: white;">Заполнена</th>
+                  <th data-type="string" style="background-color:black; color: white;" >Адрес</th>
+                  <th data-type="string" style="background-color:black; color: white;">Дата и время</th>
+                  <th data-type="header" style="background-color:black; color: white;">Фото</th> 
+                  <th data-type="button" onclick="reload()"  style="background-color:black; color: white;">Удалить</th>           
+                  <th data-type="string" style="background-color:black; color: white;">Перенести</th>           
+                </tr>
+              </thead>
+              <tbody class="list">
+               
+              </tbody>
+            </table>
+          
+        </div>
+            <button onclick="reload()" class="mybtn">Обновить</button>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Добавить заявку</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <label for="good_name" class="form-label">Адрес</label>
+          <input type="text" class="form-control mb-3" id="good_adress" maxlength="40">
+          <label for="good_price" class="form-label">Дата и время</label>
+          <input type="text" class="form-control mb-3" id="good_datetime">
+          <button type="submit" class="add_new btn btn-success">Сохранить</button>
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h1 style="     padding: 35px 0;
+  display: flex;
+  align-items: center;
+  font-size: 100px;
+  justify-content: space-between;
+ ">Статистика:</h1>
+  <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1cZoTyeI_dawvFI0G69CHZXefJcH4UzfE" width="1536" height="480"></iframe>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/sweetalert2.all.min.js"></script>
+<script src="js/list.min.js"></script>
+
+</body>
+</html> 

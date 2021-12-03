@@ -1,0 +1,241 @@
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: #6c7279;
+    background-color: #000;
+}
+
+*,  
+*.before, 
+*.after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+/* Container 
+======================= */
+.container{
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    
+}
+
+
+/* Header
+======================= */
+
+.header {
+    width: 100%;
+    height: 100px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    
+    
+}
+
+.header__inner{
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #515369;
+}
+
+/* Nav
+======================= */
+
+.nav{
+    display: flex;
+    font-size: 15px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.nav__link{
+    margin-left: 50px;
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.60;
+    transition: opacity .2s linear;
+    outline: none;
+}
+.nav__link:first-child{
+    margin-left: 0px;
+}
+.nav__link:hover{
+    opacity: 1;
+}
+/* Intro
+======================= */
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 750px;
+    padding-top: 100px;
+
+    background: #31344e url("img/intro-bg.jpg") center no-repeat / cover;
+}
+
+.intro__inner {
+    width: 100%;
+    max-width: 970px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+
+.intro__subtitle {
+    margin-bottom: 60px;
+
+    font-size: 22px;
+    color: #fff;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+/* Button
+======================= */
+
+.btn {
+    display: inline-block;
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+    border: 0;
+    cursor: pointer;
+    padding: 14px 40px;
+    vertical-align: top;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background .2s linear;
+}
+
+.btn--red{
+    background-color: red;
+}
+.btn--red:hover{
+    background-color: #d00b0b;
+}
+
+.btn--new{
+    background-color: black;
+    display: inline-block;
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+    border: 0;
+    cursor: pointer;
+    padding: 14px 40px;
+    vertical-align: top;
+    font-size: 10px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background .2s linear;
+}
+
+
+
+
+
+.mybtn{
+
+    display: inline-block;
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+    border: 0;
+    cursor: pointer;
+    padding: 14px 40px;
+    vertical-align: top;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    tansition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;    
+    text-transform: uppercase;
+}
+.mybtn:hover {
+    color: #fff;    
+    tansition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear; 
+}
+
+.mybtn:nth-child(1):hover { 
+  background: blue;
+}
+
+.mybtn:nth-child(2):hover { 
+  background: red;
+}
+
+.mybtn:nth-child(3):hover { 
+  background: green;
+}
+
+
+
+
+
+
+
+/* Teble
+======================= */
+
+th {
+    cursor: default;
+    padding: 15px;
+    text-align: center;
+    background-color: black;
+  
+  }
+  tr {
+    background-color:black;
+    color: black;
+    height: 30px;
+  
+  }
+  td {
+    padding: 15px;
+    background-color:black;
+    color: black;
+    text-align: center;
+
+  }
+  .good, .table1 {
+    background-color:black;
+    color: black;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    
+  }
+
+  td.table1 {
+    color: black;
+    background-color:black;
+    color: "white" !important;
+  }

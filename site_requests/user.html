@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="garbage.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="jquery/dist/jquery.min.js"></script>
+    <title>НаВывоз</title>
+</head>
+<script type="module" src="js/work.js" defer></script> 
+
+<body>
+    
+ <header class="header">
+       <div class = "container">
+         <div class = "header__inner">
+             НаВывоз
+              <!--<div class = "header__logo">
+                 <img src = "img/" alt = "">
+              </div>-->
+            <nav class ="nav">
+              <button onclick="first()" class="mybtn">Новые заявки</button>
+              <button onclick="second()" class="mybtn">Актуальные заявки</button>
+
+              <button onclick="third()"  class="mybtn">Завершенные заявки</button>
+              <button onclick="profile()"  class="btn--new">Администратор</button>
+              </nav>       
+        </div>
+    </div>
+</header>
+<script>
+  function profile() {
+    
+    localStorage.setItem("profile", "1")
+    window.location = 'index.html';
+  }
+  
+  </script>
+
+  <script>
+    function second() {
+      localStorage.setItem("actual", "2")
+    }
+    </script>
+    <script>
+      function third() {
+        localStorage.setItem("actual", "3")
+      }
+      </script>
+          <script>
+            function first() {
+              localStorage.setItem("actual", "1")
+            }
+            </script>
+
+<script>
+
+
+</script>
+
+<div class="intro">
+    <div class = "container">
+        <div class="intro__inner">
+          <div class="table-responsive">
+            <table class="goods table mt-3" id="table1">
+              <thead>
+                <tr class="table-primary align-middle">
+                  <th data-type="number" style="background-color:black; color: white;">№</th>
+                  <th data-type="number" style="background-color:black; color: white;">Заполнена</th>
+                  <th data-type="string" style="background-color:black; color: white;" >Адрес</th>
+                  <th data-type="string" style="background-color:black; color: white;">Дата и время</th>
+                  <th data-type="string" style="background-color:black; color: white;">_</th>                           
+                </tr>
+              </thead>
+              <tbody class="list">
+                <!-- Строки с товарами -->
+              </tbody>
+            </table>
+          
+        </div>
+            <!-- <h2 class="intro__subtitle">Привет, сегодня <?php echo "date('l, F jS, Y');" ?>.</h2>
+            <a class = "btn  btn--red" href="#">Обновить</a>  -->
+            
+            <button id="testButton" onclick="first()" class="mybtn">Обновить</button>
+            <div>_____</div>
+            <div class="menu">
+                <button class="add btn-success" type="button"  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal">&#10010;</button>
+              </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Добавить товар</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- <button class="btn btn-secondary mb-3">Обновить с сервера</button><br> -->
+          <label for="good_name" class="form-label">Адрес</label>
+          <input type="text" class="form-control mb-3" id="good_adress" maxlength="40">
+          <label for="good_price" class="form-label">Дата и время</label>
+          <input type="text" class="form-control mb-3" id="good_datetime">
+          <!-- min="100" value="1" -->
+          
+          <button type="submit" class="add_new btn btn-success">Сохранить</button>
+
+        </form>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/sweetalert2.all.min.js"></script>
+<script src="js/list.min.js"></script>
+
+</body>
+</html> 
