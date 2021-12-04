@@ -10,7 +10,6 @@
 *   Загружен блокнот с демонстрацией возможностей обученной нами нейросети + прототипами инновационной идеи  - **detecting.ipynb**(в Google Colab можно потыкать [вот тут](https://colab.research.google.com/drive/1LmyxJ_Iw7oBvdloJ4mQ4XOzqbSvL2E_J#scrollTo=eF32itPA5tQH))
 *   Приведен код сайта для регистрации заявок. 
 *   Загружен блокнот c аналитикой данных, получаемых от нейросети - **analytics.ipynb**(в Google Colab можно потыкать [здесь](https://colab.research.google.com/drive/1fcvG2pGh4M2Rr9ffDyB1OT624lay63qb?usp=sharing)
-Планируется: загрузка блокнота с полной реализацией поиска мусорных баков и инновационных идей
 
 Команда RandomName123
 tg: @danila.psarev
